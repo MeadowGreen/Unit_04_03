@@ -1,0 +1,106 @@
+﻿/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 3
+   
+   Civil War History Style Sheet
+   Author: Meadow Green
+   Date:   9-12-19
+   
+   Filename: cw_styles.css
+DO NUMBER 3
+*/
+@charset "utf-8";
+@import "cw_layout.css";
+@font-face{
+   font-family: Limelight
+   src: url(Limelight_p3.ttf) format('ttf'),
+   url(Limelight_p3.woff) format('woff'),
+   url(Limelight_p3.woff2) format('woff2');
+}
+/* Structural Styles */
+
+html{
+   background-color: rgb(151, 151,151);
+}
+body{
+   background-color: rgb(180, 180, 223);
+   font-family: Verdana, Geneva, sans-serif;
+}
+h1{
+   font-weight: normal;
+}
+h2{
+   font-weight: normal;
+}
+nav{
+   text-decoration: none;
+}
+footer{
+   color: white;
+   background-color: rgb(101, 101, 101);
+   font-size: 0.8em;
+   text-align: center;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+/* Body Header Styles */
+
+body > header{
+   background-color: rgb(97, 97, 211);
+}
+body > header > h1{
+   font-size: 4vw;
+   color: rgba(225, 225, 225, 0.8);
+   font-family: Limelight, cursive;
+   margin: 0px;
+}
+span{
+   color: rgba(225, 225, 225, 0.4);
+}
+/* Navigation Styles */
+
+nav#mainLinks{
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+nav#mainLinks a:link, a:visited{
+   color:white;
+}
+nav#mainLinks a:hover, a:active{
+   color: hsla(360, 100%, 100%, 0.8);
+   background-color: rgba(51, 51, 51, 0.5);
+}
+
+/* Outline Styles */
+#outline{
+   color: rgb(51, 51, 51,);
+   font-size: 0.8em;
+}
+#outline h1{
+   text-align: center;
+}
+nav#outline > ol:nth-of-type(1){
+   line-height: 2em;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-left: 5px;
+   margin-right: 5px;
+   list-style-type: upper-roman;
+}
+nav#outline > ol:nth-of-type(2){
+   
+}
+
+/* Section Styles */
+
+
+
+
+/* Article Styles */
+
+
+
+
+/* Aside Styles */
+
