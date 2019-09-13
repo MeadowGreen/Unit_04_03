@@ -12,12 +12,7 @@ DO NUMBER 3
 */
 @charset "utf-8";
 @import "cw_layout.css";
-@font-face{
-   font-family: Limelight
-   src: url(Limelight_p3.ttf) format('ttf'),
-   url(Limelight_p3.woff) format('woff'),
-   url(Limelight_p3.woff2) format('woff2');
-}
+
 /* Structural Styles */
 
 html{
@@ -88,19 +83,43 @@ nav#outline > ol:nth-of-type(1){
    margin-right: 5px;
    list-style-type: upper-roman;
 }
-nav#outline > ol:nth-of-type(2){
-   
+nav#outline >ol >li>ol{
+   list-style-type: upper-alpha;
 }
-
+nav a:visited, a:link{
+   color: rgb(101, 101, 101);
+   text-decoration: none;
+}
+nav a:hover, a:active{
+   color: rgb(97, 97, 211);
+   text-decoration: underline;
+}
 /* Section Styles */
 
-
-
+section{
+   background-color: rgb(220, 220, 220);
+}
+section > header > h1{
+   font-size: 2.2em;
+   padding-left: 10px;
+}
 
 /* Article Styles */
 
-
-
+article h2{
+   font-size: 1.4em;
+}
+article p:first-of-type::first-letter{
+   font-size: 2em;
+   vertical-align: baseline;
+}
 
 /* Aside Styles */
 
+aside{
+   font-size: 0.9em;
+}
+aside h1{
+   font-size: 1.4em;
+   text-align: center;
+}
